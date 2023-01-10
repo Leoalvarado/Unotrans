@@ -10,12 +10,12 @@
 
 body {
     height: 100vh;
-    background: linear-gradient( 135deg, #2663c6, #4c46f5);
+    background: linear-gradient( 135deg, #374e84, #4286f4);
 }
 
 .container {
     background-color: #ffffff;
-    width: 80%;
+    width: 95%;
     min-width: 420px;
     padding: 35px 50px;
     transform: translate(-50%, -50%);
@@ -85,7 +85,7 @@ input:focus {
 button {
     border: none;
     padding: 10px 20px;
-    background: linear-gradient( 130deg, #6f6df4, #4c46f5);
+    background: linear-gradient( 130deg, #496cbf, #4286f4);
     color: #ffffff;
     border-radius: 3px;
 }
