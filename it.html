@@ -31,17 +31,22 @@
             <!-- Bloque -->
             <div class="row">
                 <!-- #1 -->
-                <div class="column">
+                <!-- <div class="column">
                     <label for="recordType">Tipo de Ticket</label>
                     <select id="recordType" name="recordType"><option value="0125e000000P3T7">Ticket de Soporte</option>
                     </select>
-                </div>
-
-                <!-- #2 -->
+                </div> -->
                 <div class="column">
                     <label for="email">Email</label>
                     <input id="email" maxlength="80" name="email" size="20" type="text" required/>
 
+                </div>
+
+                <!-- #2 -->
+
+                <div class="column">
+                    <label for="subject">Asunto</label>
+                    <input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Asunto" required />
                 </div>
             </div>
             <!-- Cierre de Bloque -->
@@ -49,10 +54,10 @@
             <!-- Bloque -->
             <div class="row">
                 <!-- #3 -->
-                <div class="column">
+                <!-- <div class="column">
                     <label for="subject">Asunto</label>
                     <input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Asunto" required />
-                </div>
+                </div> -->
 
                 <!-- #4 -->
                 <div class="column">
@@ -70,13 +75,23 @@
                         <option value="Programas Internos">Programas Internos</option>
                         </select>
                 </div>
+
+                <div class="column">
+                    <label for="priority">Prioridad</label>
+                    <select id="priority" name="priority" required>
+                        <option value="">--Ninguno--</option><option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                        <option value="Crítico">Crítico</option>
+                        </select>
+                </div>
             </div>
             <!-- Cierre de Bloque -->
 
             <!-- Bloque -->
-            <div class="row">
-                <!-- #5 -->
-                <div class="column">
+            <!-- <div class="row"> -->
+            <!-- #5 -->
+            <!-- <div class="column">
                     <label for="reason">Motivo del caso</label>
                     <select id="reason" name="reason" required>
                         <option value="">--Ninguno--</option><option value="User didn&#39;t attend training">El usuario no asistió a la formación</option>
@@ -92,10 +107,10 @@
                         <option value="Reportes gerenciales">Reportes gerenciales</option>
                         <option value="Otros">Otros</option>
                         </select>
-                </div>
+                </div> -->
 
-                <!-- #6 -->
-                <div class="column">
+            <!-- #6 -->
+            <!-- <div class="column">
                     <label for="priority">Prioridad</label>
                     <select id="priority" name="priority" required>
                         <option value="">--Ninguno--</option><option value="Alta">Alta</option>
@@ -103,8 +118,8 @@
                         <option value="Baja">Baja</option>
                         <option value="Crítico">Crítico</option>
                         </select>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
             <!-- Cierre de Bloque -->
 
             <!-- Bloque -->
