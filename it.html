@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de IT</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Modulos/it.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Departamento de IT - UNOTRANS</h1>
+        <p>Gestión de Tickets</p>
+
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+            <input type=hidden name="orgid" value="00D5e000001Bm9x">
+            <input type=hidden name="retURL" value="https://unotrans.my.salesforce.com/">
+
+            <!-- Bloque -->
+            <div class="row">
+                <!-- #1 -->
+                <div class="column">
+                    <label for="recordType">Tipo de Ticket</label>
+                    <select id="recordType" name="recordType"><option value="0125e000000P3T7">Ticket de Soporte</option>
+                    </select>
+                </div>
+
+                <!-- #2 -->
+                <div class="column">
+                    <label for="email">Email</label>
+                    <input id="email" maxlength="80" name="email" size="20" type="text" required/>
+
+                </div>
+            </div>
+            <!-- Cierre de Bloque -->
+
+            <!-- Bloque -->
+            <div class="row">
+                <!-- #3 -->
+                <div class="column">
+                    <label for="subject">Asunto</label>
+                    <input id="subject" maxlength="80" name="subject" size="20" type="text" placeholder="Asunto" required />
+                </div>
+
+                <!-- #4 -->
+                <div class="column">
+                    <label for="type">Tipo</label>
+                    <select id="type" name="type" required><option value="">--Ninguno--</option><option value="Problem">Problema</option>
+                        <option value="Feature Request">Solicitud de función</option>
+                        <option value="Question">Pregunta</option>
+                        <option value="Salesforce">Salesforce</option>
+                        <option value="Asignación de Equipos">Asignación de Equipos</option>
+                        <option value="Licencias">Licencias</option>
+                        <option value="Planta Telefónicas">Planta Telefónicas</option>
+                        <option value="Reparación de Equipos">Reparación de Equipos</option>
+                        <option value="Redes y Conexiones">Redes y Conexiones</option>
+                        <option value="Solicitud de Reportes">Solicitud de Reportes</option>
+                        <option value="Programas Internos">Programas Internos</option>
+                        </select>
+                </div>
+            </div>
+            <!-- Cierre de Bloque -->
+
+            <!-- Bloque -->
+            <div class="row">
+                <!-- #5 -->
+                <div class="column">
+                    <label for="reason">Motivo del caso</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">--Ninguno--</option><option value="User didn&#39;t attend training">El usuario no asistió a la formación</option>
+                        <option value="Complex functionality">Funcionalidad compleja</option>
+                        <option value="Existing problem">Problema existente</option>
+                        <option value="Instructions not clear">Instrucciones poco claras</option>
+                        <option value="New problem">Nuevo problema</option>
+                        <option value="Atención a necesidades del departamento">Atención a necesidades del departamento</option>
+                        <option value="Atención a necesidades del usuario">Atención a necesidades del usuario</option>
+                        <option value="Problema con la plataforma">Problema con la plataforma</option>
+                        <option value="Problemas de conexión">Problemas de conexión</option>
+                        <option value="Nuevo Ingreso">Nuevo Ingreso</option>
+                        <option value="Reportes gerenciales">Reportes gerenciales</option>
+                        <option value="Otros">Otros</option>
+                        </select>
+                </div>
+
+                <!-- #6 -->
+                <div class="column">
+                    <label for="priority">Prioridad</label>
+                    <select id="priority" name="priority" required>
+                        <option value="">--Ninguno--</option><option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                        <option value="Crítico">Crítico</option>
+                        </select>
+                </div>
+            </div>
+            <!-- Cierre de Bloque -->
+
+            <!-- Bloque -->
+            <div class="row">
+                <!-- #5 -->
+                <!-- <div class="column">
+                    <label for="status">Estado</label><select id="status" name="status"><option value="">--Ninguno--</option><option value="New">Nuevo</option>
+                        <option value="En Proceso">En Proceso</option>
+                        <option value="On Hold">En espera</option>
+                        <option value="Closed">Cerrado</option>
+                        <option value="Escalated">Distribuido</option>
+                        <option value="Critical">Critical</option>
+                        </select>
+                </div> -->
+
+                <!-- #8 -->
+                <div class="column">
+                    <label for="description">Descripción</label>
+                    <textarea name="description" cols="30" rows="10" placeholder="Descripción" required></textarea>
+                </div>
+
+            </div>
+            <!-- Cierre de Bloque -->
+
+
+            <button type="submit" name="submit">Enviar</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
