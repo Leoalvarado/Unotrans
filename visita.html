@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unotrans</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        form {
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 400px;
+        }
+        
+        h1 {
+            color: #3498db;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+        
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="https://unotrans--partialqa.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DO3000000M9cX" method="POST">
+        <h1>Unotrans</h1>
+
+        <input type="hidden" name="orgid" value="00DO3000000M9cX">
+        <input type="hidden" name="retURL" value="https://hn.linkedin.com/company/unotrans">
+
+        <label for="date">Fecha y hora de visita:</label>
+        <input id="date" name="00NO3000001T5Wn" type="datetime-local" />
+
+        <label for="email">Correo electrónico:</label>
+        <input id="email" name="email" type="text" />
+
+        <label for="phone">Teléfono:</label>
+        <input id="phone" name="phone" type="text" />
+
+        <label for="subject">Asunto:</label>
+        <input id="subject" name="subject" type="text" />
+
+        <label for="description">Descripción:</label>
+        <textarea name="description"></textarea>
+
+        <input type="submit" name="submit" value="Enviar">
+
+    </form>
+
+</body>
+
+</html>
